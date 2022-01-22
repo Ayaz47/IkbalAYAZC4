@@ -1,0 +1,27 @@
+package day_10_14_12;
+import java.util.Scanner;
+public class C7ScannerDemo {
+    public static void main(String[] args) {
+        //to take data from the user create a scanner object
+        Scanner pelin = new Scanner(System.in); // Creates a scanner object
+    // non primitive   // reference variable or reference or instance
+      //data types
+
+        System.out.println("Enter a number");
+
+
+        /*
+         * nextInt() method is used to enter an int number from the user
+         * */
+        int num =  pelin . nextInt();
+
+
+
+        System.out.println("User Entered " + num);
+        System.out.println("Prog terminated");
+
+        if(num>18) System.out.println("hello" );
+        else System.out.println(" HI");
+
+    }
+}
