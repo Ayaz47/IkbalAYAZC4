@@ -19,9 +19,10 @@ class Parent{
     //instance variable or property
     int a=10;
     //behaviour of the parent
-    void show(){ System.out.println("Hello") ; }
+
 }
 
 class Child extends Parent{
     int j=20;
+    void show(){ System.out.println("Hello") ; }
 }

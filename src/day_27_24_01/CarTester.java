@@ -6,10 +6,15 @@ public class CarTester {
         Tesla t = new Tesla();
         t.moveForward();
         t.moveBack();
+        t.Spendgas();
+        t.Hello();
 
         BMW b = new BMW();
         b.moveForward();
         b.moveBack();
+        b.Spendgas();
+        b.Hello();
+
 
     }
 }
@@ -23,6 +28,8 @@ abstract class Car{
     //An abstract method must be overridden by the first concrete chils class in the inheritance hierarchy
     abstract void moveForward() ;//overridden method
    abstract void moveBack();
+   abstract void Spendgas();
+    void Hello(){System.out.println("HELLO method");}
 }
 
 //Abstract classes can be used via inheritance
@@ -30,13 +37,17 @@ abstract class Car{
 //A concrete or regular class cannot have an abstract method.
 //A concrete must override all the abstract methods which it inherits
   class Tesla extends Car{
+    int i =10;
     void moveForward(){//overriding method OR override
-        System.out.println("Tesla is moving forward automatically..");
+        System.out.println("Tesla is moving forward automatically.."+ i);
     }
 
     @Override
     void moveBack() {
         System.out.println("Tesla Move back");
+
+}
+    void Spendgas (){System.out.println("The car also Spend gas");
 
     }
 }
@@ -48,4 +59,9 @@ class BMW extends Car{
     void moveBack(){System.out.println("BMW move Back");
 
     }
-}
+    void Spendgas (){System.out.println("The car also Spend gas");}
+
+
+    }
+
+

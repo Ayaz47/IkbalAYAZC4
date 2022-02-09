@@ -6,6 +6,8 @@ public class Demo {
         b.setA(56);
         System.out.println(b.getA());
         b.Show();
+        A a = new B();
+        a.Show();
 
     }
 }
@@ -19,8 +21,9 @@ public class Demo {
     }
 
     class B extends A {
-    void Show1(){
+    void Show(){
         System.out.println("hi");
     }
+
     }
 

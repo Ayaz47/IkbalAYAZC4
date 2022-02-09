@@ -8,7 +8,7 @@ public class C2MethodOverLoading {
     public static void main(String[] args) {
         System.out.println("String Main");
 
-        int [] numbers ={1,2,3,4};
+        double [] numbers ={1.2,2,3,4};
         main(numbers);
     }
 

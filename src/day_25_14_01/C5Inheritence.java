@@ -3,20 +3,22 @@ package day_25_14_01;
 public class C5Inheritence {
     public static void main(String[] args) {
         //Multiple inheritance is not allowed in Java
-        //Child1 c = new Child1();  c.show() ;
+        B c = new C();  c.show() ;
     }
 
 }
+class Baba {
 
-class A{
+}
+class A extends Baba{
     void show(){  System.out.println("Hello"); }
 }
 
-class B{
+class B extends A{
     void show(){ System.out.println("Hi");}
 }
 
-class C{
+class C extends B{
     void show(){  System.out.println("slaw"); }
 }
 
